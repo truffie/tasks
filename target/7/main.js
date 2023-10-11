@@ -4,7 +4,7 @@ let p = document.querySelectorAll('p');
 let flag = false;
 
 p.forEach((el) => el.addEventListener(('mouseover'), () => el.style.backgroundColor = '#f2f2f2'))
-а
+
 p.forEach((el) => el.addEventListener(('mouseleave'), () => el.style.backgroundColor = '#fff'))
 
 choose.addEventListener(('click'), () => {
