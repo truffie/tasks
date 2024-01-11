@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+h1 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2,
+p {
+  color: #454545;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  font-size: 12px;
+}
+
+.wrapper {
+  display: flex;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 14.696px;
+  margin: 0 auto;
+  background: #f6f9ff;
+}
+
+.container {
+  width: 371px;
+  padding: 17px 32px;
+}
+
+.img-main {
+  width: 169px;
+  height: 169px;
+  border-radius: 14.696px 0px 0px 14.696px;
+  background: url(./assets/thumbnail.png), lightgray 50% / cover no-repeat;
+}
+
+.container>* {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.container>*:not(:first-child) {
+  margin-top: 25px;
+}
+
+.title h2 {
+  padding-top: 5px;
+}
+
+.title__img {
+  width: 20px;
+  height: 20px;
+  background: url(./assets/spotify.svg);
+  ;
+  background-position: center;
+  background-size: cover;
+  align-self: self-start;
+
+}
+
+.bar {
+  width: 257px;
+  height: 3px;
+  background: #DADADA;
+}
+
+.repeat {
+  background: url(./assets/repeat.svg);
+}
+
+.prev {
+  background: url(./assets/prev.svg);
+
+}
+
+.play {
+  cursor: pointer;
+  background: url(./assets/play.svg);
+
+}
+
+.stop {
+  cursor: pointer;
+  background: url(./assets/stop.svg);
+}
+
+.like {
+  background: url(./assets/like.svg)
+}
+
+.liked {
+  background: url(./assets/liked.svg)
+}
+
+.next {
+  background: url(./assets/next.svg);
+
+}
+
+.svg {
+  cursor: pointer;
+
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav>*:not(:last-child) {
+  margin-right: 20px;
+}
